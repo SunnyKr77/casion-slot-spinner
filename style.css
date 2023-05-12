@@ -1,0 +1,124 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #0A035C;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3.5rem;
+}
+
+.slot-machine {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+  }
+  
+  .slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    margin-bottom: 20px;
+    background-color: #0A035C;
+    border: #1C8ECF solid 5px;
+    border-radius: 6px;
+}
+
+.credits {
+    height: 80px;
+    width: 20%;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: grid;
+    align-items: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.icon {
+    width: 15%;
+    height: 65%;
+    background-color: lightgray;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 0.4rem;
+    background: transparent;
+    border: #1C8ECF solid 2px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    background-color: #000000;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer p {
+    width: 70%;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.2rem;
+  }
+  
+  #spin-btn {
+    padding: 10px 20px;
+    background-color: #66E21B;
+    border-radius: 15px;
+    border: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  #close-btn {
+    padding: 5px 10px;
+  }
+  
+  #congratulations-modal.show {
+    display: flex;
+  }
+  
